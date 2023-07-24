@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="CalculatorMargin">15dp</dimen>
+    <dimen name="ResultMarginTop">60dp</dimen>
+    <dimen name="ResultMarginEnd">30dp</dimen>
+    <dimen name="SecondLinearLayoutHeight">80dp</dimen>
+    <dimen name="SecondLinearLayoutPadding">15dp</dimen>
+    <dimen name="WatchIconWidthAndHeight">22dp</dimen>
+    <dimen name="ScanIconWidthAndHeight">21dp</dimen>
+    <dimen name="WatchAndScanIconMargin">5dp</dimen>
+    <dimen name="ValuesPaddingTop">5dp</dimen>
+    <dimen name="ValuesTextSize">24sp</dimen>
+    <dimen name="ValuesHeight">40dp</dimen>
+    <dimen name="LinearlayoutMarginForCalculatorRows">10dp</dimen>
+    <dimen name="RectanglesWidthAndHeight">60dp</dimen>
+    <dimen name="ShapeHeight">220dp</dimen>
+    <dimen name="CalculatorTextSize">24sp</dimen>
+    <dimen name="ResultTextSize">48sp</dimen>
+    <dimen name="ViewWidthAndHeight">10dp</dimen>
+</resources>

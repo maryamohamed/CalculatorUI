@@ -6,283 +6,180 @@
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="220dp"
+        android:layout_height="@dimen/ShapeHeight"
         android:background="@drawable/background"
         android:orientation="vertical">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="24sp"
+            android:textSize="@dimen/CalculatorTextSize"
             android:textColor="@color/white"
             android:layout_gravity="start"
-            android:layout_margin="15dp"
-            android:text="Calculator"/>
+            android:layout_margin="@dimen/CalculatorMargin"
+            android:text="@string/calculatorText"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:text="30"
-            android:layout_marginTop="60dp"
-            android:layout_marginEnd="30dp"
-            android:textColor="@color/white"
-            android:textSize="48sp" />
+            android:text="@string/Result"
+            android:textSize="@dimen/ResultTextSize"
+            android:layout_marginTop="@dimen/ResultMarginTop"
+            android:layout_marginEnd="@dimen/ResultMarginEnd"
+            android:textColor="@color/white"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:padding="15dp"
+        android:layout_height="@dimen/SecondLinearLayoutHeight"
+        android:padding="@dimen/SecondLinearLayoutPadding"
         android:orientation="horizontal">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="22dp"
-            android:layout_height="22dp"
-            android:layout_margin="5dp"
-            android:background="@drawable/circle"
-            android:drawableStart="@drawable/outline_watch_later_24" />
+        <ImageView
+            android:layout_width="@dimen/WatchIconWidthAndHeight"
+            android:layout_height="@dimen/WatchIconWidthAndHeight"
+            style="@style/Watch_Scan_Icon"
+            android:src="@drawable/outline_watch_later_24"/>
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="21dp"
-            android:layout_height="21dp"
-            android:layout_margin="5dp"
-            android:background="@drawable/circle"
-            android:drawableStart="@drawable/scan_o_svgrepo_com" />
+        <ImageView
+            android:layout_width="@dimen/ScanIconWidthAndHeight"
+            android:layout_height="@dimen/ScanIconWidthAndHeight"
+            style="@style/Watch_Scan_Icon"
+            android:src="@drawable/scan_o_svgrepo_com" />
         <TextView
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="@dimen/ValuesHeight"
             android:layout_gravity="end"
-            android:paddingTop="5dp"
+            android:paddingTop="@dimen/ValuesPaddingTop"
             android:layout_weight="1"
             android:gravity="end"
-            android:text="65-48+13"
+            android:text="@string/Values"
             android:textColor="@color/black"
-            android:textSize="24sp" />
+            android:textSize="@dimen/ValuesTextSize" />
 
 
     </LinearLayout>
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:weightSum="4"
-        android:orientation="horizontal">
+        style="@style/LinearlayoutForCalculatorRows"
+        android:weightSum="4">
         <ImageView
-            android:layout_width="60dp"
+            android:layout_width="@dimen/RectanglesWidthAndHeight"
+            android:layout_height="@dimen/RectanglesWidthAndHeight"
             android:layout_weight="1"
             android:src="@drawable/three_dots_svgrepo_com"
-            android:background="@drawable/rectangle"
-            android:layout_height="60dp"/>
-        <View
-            android:layout_width="10dp"
-            android:layout_height="10dp"/>
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="60dp"
-            android:layout_weight="1"
-            android:text="C"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:background="@drawable/rectangle"
-            android:layout_height="60dp"/>
-        <View
-            android:layout_width="10dp"
-            android:layout_height="10dp"/>
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="60dp"
-            android:layout_weight="1"
-            android:text="%"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:background="@drawable/rectangle"
-            android:layout_height="60dp"/>
-        <View
-            android:layout_width="10dp"
-            android:layout_height="10dp"/>
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="60dp"
-            android:layout_weight="1"
-            android:text="/"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:background="@drawable/rectangle"
-            android:layout_height="60dp"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:weightSum="4"
-        android:orientation="horizontal">
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="60dp"
-            android:layout_weight="1"
-            android:text="1"
-            android:textSize="24sp"
-            android:textStyle="bold"            android:background="@drawable/rectangle"
-            android:layout_height="60dp"/>
-        <View
-            android:layout_width="10dp"
-            android:layout_height="10dp"/>
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="60dp"
-            android:layout_weight="1"
-            android:text="2"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:background="@drawable/rectangle"
-            android:layout_height="60dp"/>
-        <View
-            android:layout_width="10dp"
-            android:layout_height="10dp"/>
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="60dp"
-            android:layout_weight="1"
-            android:text="3"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:background="@drawable/rectangle"
-            android:layout_height="60dp"/>
-        <View
-            android:layout_width="10dp"
-            android:layout_height="10dp"/>
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="60dp"
-            android:layout_weight="1"
-            android:text="x"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:background="@drawable/rectangle"
-            android:layout_height="60dp"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:weightSum="4"
-        android:orientation="horizontal">
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="60dp"
-            android:layout_weight="1"
-            android:text="4"
-            android:textSize="24sp"
-            android:textStyle="bold"            android:background="@drawable/rectangle"
-            android:layout_height="60dp"/>
-        <View
-            android:layout_width="10dp"
-            android:layout_height="10dp"/>
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="60dp"
-            android:layout_weight="1"
-            android:text="5"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:background="@drawable/rectangle"
-            android:layout_height="60dp"/>
-        <View
-            android:layout_width="10dp"
-            android:layout_height="10dp"/>
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="60dp"
-            android:layout_weight="1"
-            android:text="6"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:background="@drawable/rectangle"
-            android:layout_height="60dp"/>
-        <View
-            android:layout_width="10dp"
-            android:layout_height="10dp"/>
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="60dp"
-            android:layout_weight="1"
-            android:text="-"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:background="@drawable/rectangle"
-            android:layout_height="60dp"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:weightSum="4"
-        android:orientation="horizontal">
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="60dp"
-            android:layout_weight="1"
-            android:text="7"
-            android:textSize="24sp"
-            android:textStyle="bold"            android:background="@drawable/rectangle"
-            android:layout_height="60dp"/>
-        <View
-            android:layout_width="10dp"
-            android:layout_height="10dp"/>
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="60dp"
-            android:layout_weight="1"
-            android:text="8"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:background="@drawable/rectangle"
-            android:layout_height="60dp"/>
-        <View
-            android:layout_width="10dp"
-            android:layout_height="10dp"/>
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="60dp"
-            android:layout_weight="1"
-            android:text="9"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:background="@drawable/rectangle"
-            android:layout_height="60dp"/>
-        <View
-            android:layout_width="10dp"
-            android:layout_height="10dp"/>
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="60dp"
-            android:layout_weight="1"
-            android:text="+"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:background="@drawable/rectangle"
-            android:layout_height="60dp"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:weightSum="3"
-        android:orientation="horizontal">
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="60dp"
-            android:layout_weight="1"
-            android:text="0"
-            android:textSize="24sp"
-            android:textStyle="bold"            android:background="@drawable/rectangle"
-            android:layout_height="60dp"/>
-        <View
-            android:layout_width="10dp"
-            android:layout_height="10dp"/>
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="60dp"
-            android:layout_weight="1"
-            android:text="."
-            android:textSize="40sp"
-            android:textStyle="bold"
-            android:background="@drawable/rectangle"
-            android:layout_height="60dp"/>
+            android:background="@drawable/rectangle"/>
 
-        <View
-            android:layout_width="10dp"
-            android:layout_height="10dp"/>
+        <View style="@style/ViewForSpaces"/>
+
         <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="60dp"
-            android:layout_weight="1"
-            android:text="="
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:background="@drawable/rectangle"
-            android:layout_height="60dp"/>
+            style="@style/RectangleContent"
+            android:text="C"/>
+
+        <View style="@style/ViewForSpaces"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/RectangleContent"
+            android:text="%" />
+
+        <View style="@style/ViewForSpaces"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/RectangleContent"
+            android:text="/" />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/LinearlayoutForCalculatorRows"
+        android:weightSum="4">
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/RectangleContent"
+            android:text="1"/>
+
+        <View style="@style/ViewForSpaces"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/RectangleContent"
+            android:text="2"/>
+
+        <View style="@style/ViewForSpaces"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/RectangleContent"
+            android:text="3"/>
+
+        <View style="@style/ViewForSpaces"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/RectangleContent"
+            android:text="x"/>
+    </LinearLayout>
+    <LinearLayout
+        style="@style/LinearlayoutForCalculatorRows"
+        android:weightSum="4">
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/RectangleContent"
+            android:text="4"/>
+
+        <View style="@style/ViewForSpaces"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/RectangleContent"
+            android:text="5" />
+
+        <View style="@style/ViewForSpaces"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/RectangleContent"
+            android:text="6" />
+
+        <View style="@style/ViewForSpaces"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/RectangleContent"
+            android:text="-"/>
+    </LinearLayout>
+    <LinearLayout
+        style="@style/LinearlayoutForCalculatorRows"
+        android:weightSum="4">
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/RectangleContent"
+            android:text="7"/>
+
+        <View style="@style/ViewForSpaces"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/RectangleContent"
+            android:text="8"/>
+
+        <View style="@style/ViewForSpaces"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/RectangleContent"
+            android:text="9"/>
+
+        <View style="@style/ViewForSpaces"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/RectangleContent"
+            android:text="+"/>
+    </LinearLayout>
+    <LinearLayout
+        style="@style/LinearlayoutForCalculatorRows"
+        android:weightSum="3">
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/RectangleContent"
+            android:text="0"/>
+
+        <View style="@style/ViewForSpaces"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/RectangleContent"
+            android:text="."/>
+
+
+        <View style="@style/ViewForSpaces"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/RectangleContent"
+            android:text="="/>
     </LinearLayout>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
