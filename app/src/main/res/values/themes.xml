@@ -1,7 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <style name="Base.Theme.CalculatorUI" parent="Theme.Material3.DayNight.NoActionBar">
     </style>
-
     <style name="Theme.CalculatorUI" parent="Base.Theme.CalculatorUI" />
     <style name="Watch_Scan_Icon" >
         <item name="android:layout_margin">@dimen/WatchAndScanIconMargin </item>

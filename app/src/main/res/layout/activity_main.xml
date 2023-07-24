@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
@@ -62,7 +63,7 @@
         style="@style/LinearlayoutForCalculatorRows"
         android:weightSum="4">
         <ImageView
-            android:layout_width="@dimen/RectanglesWidthAndHeight"
+            android:layout_width="0dp"
             android:layout_height="@dimen/RectanglesWidthAndHeight"
             android:layout_weight="1"
             android:src="@drawable/three_dots_svgrepo_com"
@@ -72,13 +73,13 @@
 
         <androidx.appcompat.widget.AppCompatButton
             style="@style/RectangleContent"
-            android:text="C"/>
+            android:text="@string/c"/>
 
         <View style="@style/ViewForSpaces"/>
 
         <androidx.appcompat.widget.AppCompatButton
             style="@style/RectangleContent"
-            android:text="%" />
+            android:text="@string/mod" />
 
         <View style="@style/ViewForSpaces"/>
 
@@ -91,19 +92,19 @@
         android:weightSum="4">
         <androidx.appcompat.widget.AppCompatButton
             style="@style/RectangleContent"
-            android:text="1"/>
+            android:text="@string/one"/>
 
         <View style="@style/ViewForSpaces"/>
 
         <androidx.appcompat.widget.AppCompatButton
             style="@style/RectangleContent"
-            android:text="2"/>
+            android:text="@string/two"/>
 
         <View style="@style/ViewForSpaces"/>
 
         <androidx.appcompat.widget.AppCompatButton
             style="@style/RectangleContent"
-            android:text="3"/>
+            android:text="@string/three"/>
 
         <View style="@style/ViewForSpaces"/>
 
@@ -116,70 +117,70 @@
         android:weightSum="4">
         <androidx.appcompat.widget.AppCompatButton
             style="@style/RectangleContent"
-            android:text="4"/>
+            android:text="@string/four"/>
 
         <View style="@style/ViewForSpaces"/>
 
         <androidx.appcompat.widget.AppCompatButton
             style="@style/RectangleContent"
-            android:text="5" />
+            android:text="@string/five" />
 
         <View style="@style/ViewForSpaces"/>
 
         <androidx.appcompat.widget.AppCompatButton
             style="@style/RectangleContent"
-            android:text="6" />
+            android:text="@string/six" />
 
         <View style="@style/ViewForSpaces"/>
 
         <androidx.appcompat.widget.AppCompatButton
             style="@style/RectangleContent"
-            android:text="-"/>
+            android:text="@string/minus"/>
     </LinearLayout>
     <LinearLayout
         style="@style/LinearlayoutForCalculatorRows"
         android:weightSum="4">
         <androidx.appcompat.widget.AppCompatButton
             style="@style/RectangleContent"
-            android:text="7"/>
+            android:text="@string/seven"/>
 
         <View style="@style/ViewForSpaces"/>
 
         <androidx.appcompat.widget.AppCompatButton
             style="@style/RectangleContent"
-            android:text="8"/>
+            android:text="@string/eight"/>
 
         <View style="@style/ViewForSpaces"/>
 
         <androidx.appcompat.widget.AppCompatButton
             style="@style/RectangleContent"
-            android:text="9"/>
+            android:text="@string/nine"/>
 
         <View style="@style/ViewForSpaces"/>
 
         <androidx.appcompat.widget.AppCompatButton
             style="@style/RectangleContent"
-            android:text="+"/>
+            android:text="@string/plus"/>
     </LinearLayout>
     <LinearLayout
         style="@style/LinearlayoutForCalculatorRows"
         android:weightSum="3">
         <androidx.appcompat.widget.AppCompatButton
             style="@style/RectangleContent"
-            android:text="0"/>
+            android:text="@string/zero"/>
 
         <View style="@style/ViewForSpaces"/>
 
         <androidx.appcompat.widget.AppCompatButton
             style="@style/RectangleContent"
-            android:text="."/>
+            android:text="@string/dot"/>
 
 
         <View style="@style/ViewForSpaces"/>
 
         <androidx.appcompat.widget.AppCompatButton
             style="@style/RectangleContent"
-            android:text="="/>
+            android:text="@string/equal"/>
     </LinearLayout>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

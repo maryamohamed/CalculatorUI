@@ -11,7 +11,7 @@
     <dimen name="ValuesPaddingTop">5dp</dimen>
     <dimen name="ValuesTextSize">24sp</dimen>
     <dimen name="ValuesHeight">40dp</dimen>
-    <dimen name="LinearlayoutMarginForCalculatorRows">10dp</dimen>
+    <dimen name="LinearlayoutMarginForCalculatorRows">15dp</dimen>
     <dimen name="RectanglesWidthAndHeight">60dp</dimen>
     <dimen name="ShapeHeight">220dp</dimen>
     <dimen name="CalculatorTextSize">24sp</dimen>
